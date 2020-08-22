@@ -1,0 +1,43 @@
+
+DELETE, TRUNCATE AND DROP
+
+1. DROP
+- DROP is a DDL(Data Definition Language) command 
+- used to remove table definition and indexes, data, constraints, triggers etc for that table.
+- Performance-wise the DROP command is quick to perform but slower than TRUNCATE because it gives rise to complications.
+- Unlike DELETE we can’t rollback the data after using the DROP command.
+- In the DROP command, table space is freed from memory because it permanently delete table as well as all its contents.
+- Undo is not possible
+
+Syntax of DROP Command-
+  DROP TaBLE tableName;
+
+2. TRUNCATE
+
+- TRUNCATE is a DDL(Data Definition Language) command.
+- TRUNCATE command is used to delete all the rows from the table.Which is a table loch and the whole table is locked to remove all records.
+- TRUNCATE command does not free the table space from memory.
+-  view of table exist.
+- integrity constraints will not be removed.
+- undo space is used but less than DELETE.
+- this command is faster than DROP and delete.
+- we can't use where clause
+
+	TRUNCATETABLE Customers;  
+	
+3. DELETE
+
+- DELETE is a DML command.
+- DELETE is executed using a row lock, each row in the table is locked for deletion.
+- We can use where clause with DELETE to filter & delete specific records.
+- The DELETE command is used to remove rows from a table based on WHERE condition.
+- It maintains the log, so it slower than TRUNCATE.
+- The DELETE statement removes rows one at a time and records an entry in the transaction log for each deleted row.
+- Identity of column keep DELETE retains the identity.
+- To use Delete you need DELETE permission on the table.
+- Delete uses more transaction space than the Truncate statement.
+- The delete can be used with indexed views.
+	DELETE FROM Customers;  
+	OR
+ 	DELETE Customer --- is also possible
+	DELETE from  WHERE  ; 
