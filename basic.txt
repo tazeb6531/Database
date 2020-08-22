@@ -1,27 +1,23 @@
 
+Some Ideas about SQL
 
 SQL server needs 
-- SSMS -management studio
-- SSIS -Intigeration service
-- SSRS - Reporting service
+	- SSMS -management studio
+	- SSIS -Intigeration service
+	- SSRS - Reporting service
 
 SSMS
-- Object explorer - F8
-- The data base in object explorer has four standard system Database
-   . Master
-   . Model
-   . msdb
-   . tempdb
-Properties  --- F4
+	- Object explorer - F8
+	- The data base in object explorer has four standard system Database
+	   . Master
+	   . Model
+	   . msdb
+	   . tempdb
+	Properties  --- F4
 
 To create database
 	right click and new database and name it
-
-
-
- 
-  
-
+	
 The build blocks of SQL/Basic SQL Command 
 	- Create a table
 	- Insert
@@ -33,17 +29,17 @@ SQL
    - DML(Data manipulation Languages) read and modified. Called CRUB(create, read, update and delete rows respectively)
 
 Create a table
-1. Using GUI --> on your interested database  right click new table and then give name for column, row and specifiy whether the table accept null or not
- then referesh the object exporer u will get ure table by the name of dbo. as a suffix it is to mean that "database owner"
-2. using T-SQL
-create table --- TABLENAME
-(Name  varchar), (ID, int).... 
+	1. Using GUI --> on your interested database  right click new table and then give name for column, row and specifiy whether the table accept null or not
+	 then referesh the object exporer u will get ure table by the name of dbo. as a suffix it is to mean that "database owner"
+	2. using T-SQL
+	create table --- TABLENAME
+	(Name  varchar), (ID, int).... 
 
 adding values to the table
-1. using GUI by right click the on the table and fill all the required format
-2. Using T_SQL
-  Insert into TABLENAME
-Values(Alemu, 30), (Tesema, 29)....
+	1. using GUI by right click the on the table and fill all the required format
+	2. Using T_SQL
+	  Insert into TABLENAME
+	Values(Alemu, 30), (Tesema, 29)....
 
 
 
