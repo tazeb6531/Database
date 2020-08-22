@@ -15,7 +15,7 @@ DELETE, TRUNCATE AND DROP
 - TRUNCATE is a DDL(Data Definition Language) command.
 - TRUNCATE command is used to delete all the rows from the table.Which is a table loch and the whole table is locked to remove all records.
 - TRUNCATE command does not free the table space from memory.
--  view of table exist.
+- view of table exist.
 - integrity constraints will not be removed.
 - undo space is used but less than DELETE.
 - this command is faster than DROP and delete.
